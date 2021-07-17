@@ -184,6 +184,13 @@ input.cadast{
     font-family: 'Rubik', sans-serif;
 
 }
+::placeholder{
+    color: #ffffffff;
+    font-weight: bold;
+    font-size: 12   pt;
+    font-family: 'Rubik', sans-serif;
+
+}
 
 .card-container p {
     text-align: center;

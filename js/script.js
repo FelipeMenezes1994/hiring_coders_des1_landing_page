@@ -11,9 +11,9 @@ form.addEventListener('submit', (e) => {
     }
     let convertData = JSON.stringify(data);
 
+    if (data != null){
 
-
-    localStorage.setItem(localStorage.length+1, convertData)
+    localStorage.setItem(localStorage.length + 1, convertData)
 
 
     let content = document.getElementById('content')
@@ -27,5 +27,8 @@ form.addEventListener('submit', (e) => {
     setTimeout(() => {
         content.innerHTML = pronto
     }, 1000);
+}else{
+    alert('Preencha o formulário.')
+}
 })
 
