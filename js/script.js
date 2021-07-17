@@ -11,24 +11,24 @@ form.addEventListener('submit', (e) => {
     }
     let convertData = JSON.stringify(data);
 
-    if (data != null){
+    if (document.getElementById('name').value !='' && document.getElementById('email').value != '') {
 
-    localStorage.setItem(localStorage.length + 1, convertData)
+        localStorage.setItem(localStorage.length + 1, convertData)
 
 
-    let content = document.getElementById('content')
+        let content = document.getElementById('content')
 
-    let carregando = `<p class="teste">Carregando ...</p>`
+        let carregando = `<p class="teste">Carregando ...</p>`
 
-    let pronto = `<p class="teste">Pronto</p>`
+        let pronto = `<p class="teste">Pronto</p>`
 
-    content.innerHTML = carregando
+        content.innerHTML = carregando
 
-    setTimeout(() => {
-        content.innerHTML = pronto
-    }, 1000);
-}else{
-    alert('Preencha o formulário.')
-}
+        setTimeout(() => {
+            content.innerHTML = pronto
+        }, 1000);
+    } else {
+        alert('Preencha o formulário.')
+    }
 })
 
