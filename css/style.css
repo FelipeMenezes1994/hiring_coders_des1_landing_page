@@ -73,7 +73,7 @@ main .section-container{
   }
 
 .right-column{
-    margin-top: 35px;
+    margin-top: 60px;
     flex-direction: column;
 }
 
@@ -90,7 +90,7 @@ body main .section-container a#roll-to-down{
 }
 
 .list-container{
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .sec-two-content ul{
@@ -135,7 +135,7 @@ a .down{
 
 
 .card-container{
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #2e80ab;
     border-radius: 12px;
     padding: 10px 0px 25px 25px;
